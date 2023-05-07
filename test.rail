@@ -1,0 +1,22 @@
+<rail version="0.1">
+
+<output>
+    <object name="test_rail">
+
+        <string  name = "name"   description = "main character's name" />
+        <string  name = "gender" description = "main character's gender" />
+        <integer name = "age"    format      = "valid-range: 0 100"/>  
+
+    </object>
+</output>
+
+
+<prompt>
+
+Given the following notes, please extract a dictionary that contains the main character's information.
+
+{{notes}}
+
+@complete_json_suffix_v2
+</prompt>
+</rail>
